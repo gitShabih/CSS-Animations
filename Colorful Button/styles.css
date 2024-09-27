@@ -1,0 +1,97 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-family: var(--font-family);
+}
+:root {
+  --font-family: "Orbitron", sans-serif;
+  --body-bg: #1e1f25;
+  --btn-bg: #000;
+  --btn-color: #cbcbcb;
+  --btn-color-hover: #fff;
+
+  /* 1. Electric Vibes */
+  /* --grad-color1: #3a6073; 
+  --grad-color2: #3a6073; 
+  --grad-color3: #d7d2cc; 
+  --grad-color4: #d9a7c7; 
+   --grad-color5: #ffafbd; */
+
+  /* 2. Sunset Bliss  */
+
+  /* --grad-color1: #eeaf61;
+  --grad-color2: #fb9062;
+  --grad-color3: #ee5d6c;
+  --grad-color4: #ce4993;
+  --grad-color5: #6a0d83; */
+
+  /* 3. Ocean Breaze */
+
+  /* --grad-color1: #00b4db; 
+--grad-color2: #0083b0; 
+--grad-color3: #00b4db; 
+--grad-color4: #4facfe; 
+--grad-color5: #00f2fe;  */
+
+  /* 4. Berry Blast   */
+
+  /* --grad-color1: #a500b5; 
+--grad-color2: #d95f02; 
+--grad-color3: #a500b5; 
+--grad-color4: #f19cbb; 
+--grad-color5: #c0c0d3;  */
+
+  /* 5. Cosmic Journey  */
+
+  --grad-color1: #0f0c29;
+  --grad-color2: #302b63;
+  --grad-color3: #24243e;
+  --grad-color4: #dc2430;
+  --grad-color5: #7b4397;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.button-border {
+  background: linear-gradient(
+    115deg,
+    var(--grad-color1),
+    var(--grad-color2),
+    var(--grad-color3),
+    var(--grad-color4),
+    var(--grad-color5)
+  );
+  padding: 2px;
+}
+
+.button {
+  border: none;
+  background: var(--btn-bg);
+  color: var(--btn-color);
+  padding: 1em 1.5em;
+  font-family: inherit;
+  letter-spacing: 0.1em;
+}
+
+.button-border:hover {
+  background: linear-gradient(
+    230deg,
+    var(--grad-color1),
+    var(--grad-color2),
+    var(--grad-color3),
+    var(--grad-color4),
+    var(--grad-color5)
+  );
+}
+
+.button-border:hover .button {
+  color: var(--btn-color-hover);
+  padding: 1.1em 1.6em;
+}
